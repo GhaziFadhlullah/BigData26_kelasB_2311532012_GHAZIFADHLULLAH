@@ -1,0 +1,15 @@
+langkah,detik,delta_rss_mb
+unduh dataset,0.35,1.9
+baca semua kolom,1.8,482.3
+baca kolom terpilih,1.18,221.5
+baca kolom terpilih (pyarrow backend),0.78,188.7
+tulis CSV,42.95,5.7
+agregasi chunking,3.72,20.7
+spark count,3.0,0.0
+spark agregasi,8.28,0.0
+"agregasi chunking 100,000",3.84,22.9
+"agregasi chunking 1,000,000",6.06,28.7
+tulis parquet snappy,2.14,46.7
+tulis parquet gzip,65.02,-12.5
+unduh 2023-07,0.54,0.0
+baca 2023-07,0.54,170.2
