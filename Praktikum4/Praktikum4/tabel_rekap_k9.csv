@@ -1,0 +1,7 @@
+Kebutuhan,Cara yang unggul,Cara yang lemah,Angka Anda
+Ambil satu data lewat id,Key-value; tabel dengan indeks,Tabel tanpa indeks,"200 id: tanpa indeks 4.6329 s, dengan indeks 0.0056 s (827x), key-value 0.0019 s"
+Menghitung atau merangkum banyak baris,Per kolom (DuckDB pada Parquet),Key-value (buka semua nilai),DuckDB 0.2283 s vs SQLite 6.4580 s (28.3x); key-value 2.3904 s vs SQL 0.3624 s (6.6x lebih lambat)
+Data dengan field opsional atau berubah-ubah,Document,"Tabel (kolom NULL, migrasi)",(kualitatif)
+Keterhubungan dengan jumlah langkah bebas,Graph,SQL (satu JOIN per langkah),2 langkah: graph 0.0080 s vs SQL 0.0161 s; hasil sama: True
+Mencari lokasi dalam wilayah,Spasial dengan indeks,Memeriksa semua titik,"1.000 kotak: loop ≈ 141 s (perkiraan), NumPy 0.5892 s, STRtree 0.4853 s (1.2x vs NumPy)"
+Perubahan yang harus aman dan bisa dibatalkan,Tabel Delta,Folder Parquet biasa,(kualitatif)
